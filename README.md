@@ -26,7 +26,7 @@ dataCrawling() : Return district-level data and neighborhood-level data separate
 ```python
 
 from seoulEnergyMap import seoulEnergyMap
-energyMap =  seoulEnergyMap(outcomeType = 'energy', sourceType = 'electricity', guList = ['Gangnam'] , howManyPreviousYears = 3, howManyMonths = 12)
+energyMap = seoulEnergyMap(outcomeType = 'energy', sourceType = 'electricity', guList = ['Gangnam'] , howManyPreviousYears = 3, howManyMonths = 12)
 energyMap.dataCrawling()
 
 ```

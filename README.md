@@ -3,6 +3,10 @@
 
 ### Web-crawling energy consumption data and greenhouse gas emissions data of each energy source (electricity, natural gas, and district heating) by the administrative districts in Seoul from https://energyinfo.seoul.go.kr/
 
+### Requirements
+```c
+pip install -r requirements.txt
+```
 
 #### *class* seoulEnergyMap(outcomeType='energy', sourceType='electricity', guList = ['Gangnam'], howManyPreviousYears = 3, howManyMonths = 12)
 

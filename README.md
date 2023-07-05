@@ -8,8 +8,7 @@
 pip install -r requirements.txt
 ```
 
-#### *class* 
-seoulEnergyMap(outcomeType='energy', sourceType='electricity', guList = ['Gangnam'], howManyPreviousYears = 3, howManyMonths = 12)
+#### *class* seoulEnergyMap(outcomeType='energy', sourceType='electricity', guList = ['Gangnam'], howManyPreviousYears = 3, howManyMonths = 12)
 
 #### **Parameters**:
 

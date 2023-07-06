@@ -182,40 +182,40 @@ class seoulEnergyMap():
             
             if y == 0:
                 
-                newGuDict ={}
+                self.newGuDict ={}
                 
                 for a in self.guValues:
                     
                     addGuDict = { a: {year[y]: self.guDict[a] } }
-                    newGuDict.update(addGuDict)
+                    self.newGuDict.update(addGuDict)
                 
             else: 
                 for a in self.guValues:
         
-                    newGuDict[a][year[y]] = self.guDict[a]
+                    self.newGuDict[a][year[y]] = self.guDict[a]
                     
                     
             self.guDict = self.toCrawlGuData.to_dict(orient='index')
             
             if y == 0:
                 
-                newDongDict ={}
+                self.newDongDict ={}
                 
                 for a in self.dongValues:
                     
                     addDongDict = { a: {year[y]: self.dongDict[a] } }
-                    newDongDict.update(addDongDict)
+                    self.newDongDict.update(addDongDict)
                 
             else: 
                 for a in self.dongValues:
         
-                    newDongDict[a][year[y]] = self.dongDict[a]            
+                    self.newDongDict[a][year[y]] = self.dongDict[a]            
                     
             # data save
             
             with open('./guEnergyMapData.json','w') as f:
-                json.dump(self.guDict, f, ensure_ascii=False, indent=4)    
+                json.dump(self.newGuDict, f, ensure_ascii=False, indent=4)    
                 
             with open('./dongEnergyMapData.json','w') as f:
-                json.dump(self.dongDict, f, ensure_ascii=False, indent=4)    
+                json.dump(self.newDongDict, f, ensure_ascii=False, indent=4)    
                 
